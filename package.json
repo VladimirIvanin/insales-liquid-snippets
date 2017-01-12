@@ -1,0 +1,27 @@
+{
+  "name": "insales-liquid-snippets",
+  "main": "./lib/insales-liquid-snippets",
+  "version": "0.1.0",
+  "description": "insales snippets for liquid",
+  "keywords": [
+    "liquid",
+    "insales"
+  ],
+  "activationCommands": {
+    "atom-workspace": "insales-liquid-snippets:toggle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladimirIvanin/insales-liquid-snippets.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {},
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/VladimirIvanin/insales-liquid-snippets/issues"
+  },
+  "homepage": "https://github.com/VladimirIvanin/insales-liquid-snippets#readme"
+}
