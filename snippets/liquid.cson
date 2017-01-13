@@ -1,40 +1,7 @@
-'.js':
-  'EventBus.subscribe':
-    'prefix': 'eventbs'
-    'body': """
-    EventBus.subscribe('${1}', function (data) {
-      ${2}
-    });
-    """
-
-  'add_items:insales:cart':
-    'prefix': 'addic'
-    'body': """
-    EventBus.subscribe('add_items:insales:cart', function (cart) {
-      ${1}
-    });
-    """
-
-  'EventBus.publish':
-    'prefix': 'eventbp'
-    'body': """
-    EventBus.publish('${1}', '${2}');
-    """
-
 '.liquid':
   'Liquid replace':
     'prefix': 'repl'
     'body': " | replace: '${1:substring}', '${2:replacement}'"
-
-  'Liquid number_of_comments':
-    'prefix': 'numcom'
-    'body': '{{ number_of_comments }}'
-
-  'Liquid script (local)':
-    'prefix': 'jsloc'
-    'body': """
-    {{ "${1}" | ${2}asset_url | script_tag }}
-    """
 
   'Liquid asset (local)':
     'prefix': 'assu'
@@ -82,24 +49,6 @@
         Добавить в корзину
       </button>
     </form>
-    """
-
-  'Liquid script (remote)':
-    'prefix': 'jsrem'
-    'body': """
-    {{ "${1}" | script_tag }}
-    """
-
-  'Liquid stylesheet (local)':
-    'prefix': 'cssloc'
-    'body': """
-    {{ "${1}" | ${2}asset_url | stylesheet_tag }}
-    """
-
-  'Liquid stylesheet (remote)':
-    'prefix': 'cssrem'
-    'body': """
-    {{ "${1}" | stylesheet_tag }}
     """
 
   'Liquid paginate by':
