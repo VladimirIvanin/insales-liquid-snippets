@@ -1,0 +1,36 @@
+'.liquid':
+  'Common js search':
+    'prefix': 'search'
+    'body': """
+    <form action="/search" method="get">
+      <input type="hidden" name="lang" value="{{ language.locale }}">
+      <input type="text" name="q" value="" placeholder="Поиск" data-search-field />
+      <button type="submit">Поиск</button>
+      <div data-search-result></div>
+    </form>
+    """
+
+  'Common js product':
+    'prefix': 'prodform'
+    'body': """
+    <form action="{{ cart_url }}" method="post" data-product-id="{{ product.id }}">
+      {% if product.show_variants? %}
+        <select name="variant_id" data-product-variants>
+          {% for variant in product.variants %}
+            <option value="{{ variant.id }}">{{ variant.title | escape }}</option>
+          {% endfor %}
+        </select>
+      {% else %}
+        <input type="hidden" name="variant_id" value="{{product.variants.first.id}}" >
+      {% endif %}
+      <input type="text" name="comment" value="">
+      <div data-quantity>
+        <input type="text" name="quantity" value="1" />
+        <span data-quantity-change="-1">-</span>
+        <span data-quantity-change="1">+</span>
+      </div>
+      <button type="submit" data-item-add>
+        Добавить в корзину
+      </button>
+    </form>
+    """

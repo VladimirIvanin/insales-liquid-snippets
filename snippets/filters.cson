@@ -1,0 +1,14 @@
+'.liquid':
+  'Liquid date now year':
+    'prefix': 'datenowy'
+    'body': "{{ 'now' | date: '%Y' }}"
+
+  'Liquid asset (local)':
+    'prefix': 'assu'
+    'body': """
+    {{ '${1}' | asset_url }}
+    """
+
+  'Liquid replace':
+    'prefix': 'repl'
+    'body': " | replace: '${1:substring}', '${2:replacement}'"
