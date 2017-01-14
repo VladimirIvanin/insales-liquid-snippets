@@ -23,7 +23,7 @@
 
   'Liquid replace':
     'prefix': 'repl'
-    'body': " | replace: '${1:substring}', '${2:replacement}'"
+    'body': "| replace: '${1:substring}', '${2:replacement}'"
 
   'Liquid append':
     'prefix': 'append'
@@ -32,3 +32,11 @@
   'Liquid prepend':
     'prefix': 'prepend'
     'body': "| prepend: '${1}'"
+
+  'Liquid downcase':
+    'prefix': 'downcase'
+    'body': "| downcase"
+
+  'Liquid UPPERCASE':
+    'prefix': 'upcase '
+    'body': "| upcase"

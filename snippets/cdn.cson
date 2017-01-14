@@ -6,7 +6,7 @@
     """
 
   'CDN normalize':
-    'prefix': 'normalize'
+    'prefix': 'cdnnormalize'
     'body': """
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
     """
@@ -64,7 +64,7 @@
     """
 
   'CDN remodal':
-    'prefix': 'remodal'
+    'prefix': 'cdnremodal'
     'body': """
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css" />

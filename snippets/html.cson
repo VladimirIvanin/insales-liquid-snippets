@@ -53,6 +53,17 @@
     <img src="{{ product.first_image.medium_url }}" alt="{{ product.title }}">
     """
 
+  'Select page_size':
+    'prefix': 'page_size'
+    'body': """
+    <select name="page_size">
+      {{ "12"   | select_option: page_size, "12" }}
+      {{ "24"   | select_option: page_size, "24" }}
+      {{ "48"   | select_option: page_size, "48" }}
+      {{ "96"   | select_option: page_size, "96" }}
+    </select>
+    """
+
   'Liquid product.variants':
     'prefix': 'variants'
     'body': """

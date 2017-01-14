@@ -106,3 +106,19 @@
   'Liquid article.content':
     'prefix': 'articlec'
     'body': '{{ article.content }}'
+
+  'Liquid comment.created_at':
+    'prefix': 'commentcreated'
+    'body': '{{ comment.created_at | date: "%d.%m.%Y" }}'
+
+  'Liquid account.title':
+    'prefix': 'accounttitle'
+    'body': '{{ account.title | editable }}'
+
+  'Liquid account.phone':
+    'prefix': 'accountphone'
+    'body': '{{ account.phone | editable }}'
+
+  'Liquid account.email':
+    'prefix': 'accountemail'
+    'body': '{{ account.email | editable }}'
