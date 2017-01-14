@@ -171,3 +171,11 @@
       {% endfor %}
     {% endif %}
     """
+
+  'Liquid characteristic in product.properties.handle${1}.characteristics':
+    'prefix': 'characteristic'
+    'body': """
+    {% for characteristic in product.properties.handle${1}.characteristics %}
+      ${2}
+    {% endfor %}
+    """

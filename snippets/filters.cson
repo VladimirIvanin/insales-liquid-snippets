@@ -27,8 +27,8 @@
 
   'Liquid append':
     'prefix': 'append'
-    'body': "| append: '${1}' }}"
-    
+    'body': "| append: '${1}'"
+
   'Liquid prepend':
     'prefix': 'prepend'
-    'body': "| prepend: '${1}' }}"
+    'body': "| prepend: '${1}'"

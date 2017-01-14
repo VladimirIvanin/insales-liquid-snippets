@@ -43,6 +43,10 @@
     'prefix': 'proddesc'
     'body': '{{ product.description }}'
 
+  'Liquid product.short_description':
+    'prefix': 'prodshortdesc'
+    'body': '{{ product.short_description }}'
+
   'Liquid product.variants':
     'prefix': 'prodvar'
     'body': '{{ product.variants }}'

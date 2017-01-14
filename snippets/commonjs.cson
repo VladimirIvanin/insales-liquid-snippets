@@ -10,6 +10,24 @@
     </form>
     """
 
+  'Common js buy button':
+    'prefix': 'buybutton'
+    'body': """
+    <button type="submit" data-item-add>
+      Добавить в корзину
+    </button>
+    """
+
+  'Common js data-quantity':
+    'prefix': 'quantity'
+    'body': """
+    <div data-quantity>
+      <input type="text" name="quantity" value="1" />
+      <span data-quantity-change="-1">-</span>
+      <span data-quantity-change="1">+</span>
+    </div>
+    """
+
   'Common js compare add':
     'prefix': 'compareadd'
     'body': """

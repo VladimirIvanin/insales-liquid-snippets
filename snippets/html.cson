@@ -53,6 +53,20 @@
     <img src="{{ product.first_image.medium_url }}" alt="{{ product.title }}">
     """
 
+  'Liquid product.variants':
+    'prefix': 'variants'
+    'body': """
+    {% if product.show_variants? %}
+      <select name="variant_id" data-product-variants>
+        {% for variant in product.variants %}
+          <option value="{{ variant.id }}">{{ variant.title | escape }}</option>
+        {% endfor %}
+      </select>
+    {% else %}
+      <input type="hidden" name="variant_id" value="{{product.variants.first.id}}" >
+    {% endif %}
+    """
+
   'Fixes IE':
     'prefix': 'fixesie'
     'body': """
