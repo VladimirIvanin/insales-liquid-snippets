@@ -9,6 +9,18 @@
     {{ '${1}' | asset_url }}
     """
 
+  'Liquid asset_url_if_exists':
+    'prefix': 'assuie'
+    'body': """
+    {{ '${1}' | asset_url_if_exists }}
+    """
+
+  'Liquid file (local)':
+    'prefix': 'fileu'
+    'body': """
+    {{ '${1}' | file_url }}
+    """
+
   'Liquid replace':
     'prefix': 'repl'
     'body': " | replace: '${1:substring}', '${2:replacement}'"

@@ -11,6 +11,30 @@
     <script src="{{ '${1}' | asset_url }}"></script>
     """
 
+  'Liquid link menu':
+    'prefix': 'alink'
+    'body': """
+    <a class="${1}" href="{{ link.url }}">
+      {{ link.title }}
+    </a>
+    """
+
+  'Liquid product link':
+    'prefix': 'aprodlinktitle'
+    'body': """
+    <a class="${1}" href="{{ product.url }}">
+      {{ product.title }}
+    </a>
+    """
+
+  'Liquid quick checkout button':
+    'prefix': 'quick-checkout'
+    'body': """
+    <button type="button" class="button-quick-checkout" data-quick-checkout="[data-product-id='{{ product.id }}']">
+      В один клик
+    </button>
+    """
+
   'Liquid img asset (local)':
     'prefix': 'imgass'
     'body': """

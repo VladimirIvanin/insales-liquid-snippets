@@ -1,6 +1,6 @@
 '.liquid':
   'Common js search':
-    'prefix': 'search'
+    'prefix': 'searchcommon'
     'body': """
     <form action="/search" method="get">
       <input type="hidden" name="lang" value="{{ language.locale }}">
@@ -10,8 +10,35 @@
     </form>
     """
 
+  'Common js cart':
+    'prefix': 'cartcommon'
+    'body': """
+    <form action="{{ cart_url }}" method="post" data-cart-form>
+      <input type="hidden" name="_method" value="put">
+      <input type="hidden" name="make_order" value="">
+      {% for item in cart.items %}
+        <div data-product-id="{{ item.product.id }}" data-item-id="{{ item.id }}">
+          <div data-quantity>
+            <input type="text" name="cart[quantity][{{ item.id }}]" value="{{ item.quantity }}">
+            <span data-quantity-change="-1">-</span>
+            <span data-quantity-change="1">+</span>
+          </div>
+          <span data-item-delete="{{ item.id }}">X</span>
+        </div>
+      {% endfor %}
+      <div>
+        <label> Купон </label>
+        <input type="text" name="cart[coupon]" value="{{ cart.coupon }}" />
+        <input type="button" value="Применить" data-coupon-submit/>
+      </div>
+      <input type="submit" value="Оформить" data-cart-submit>
+      <button data-cart-clear>Очистить</button>
+      <button data-cart-update>Обновить</button>
+    </form>
+    """
+
   'Common js product':
-    'prefix': 'prodform'
+    'prefix': 'prodformcommon'
     'body': """
     <form action="{{ cart_url }}" method="post" data-product-id="{{ product.id }}">
       {% if product.show_variants? %}

@@ -117,7 +117,7 @@
       ${1}
     {% endcomment %}
     """
-    
+
   'Liquid paginate by':
     'prefix': 'pagby'
     'body': """
@@ -139,6 +139,14 @@
     'body': """
     {% for block in block_lists.handle${1}.blocks %}
       ${2}
+    {% endfor %}
+    """
+
+  'Liquid for item in cart.items':
+    'prefix': 'foritemcart'
+    'body': """
+    {% for item in cart.items %}
+      ${1}
     {% endfor %}
     """
 
