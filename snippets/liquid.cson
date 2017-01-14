@@ -39,17 +39,9 @@
     'prefix': 'prodpricemax'
     'body': '{{ product.price_max }}'
 
-  'Liquid product.compare_at_price_max':
-    'prefix': 'prodcapmax'
-    'body': '{{ product.compare_at_price_max }}'
-
   'Liquid product.price_varies':
     'prefix': 'productpv'
     'body': '{{ product.price_varies }}'
-
-  'Liquid product.compare_at_price_varies':
-    'prefix': 'productcapvar'
-    'body': '{{ product.compare_at_price_varies }}'
 
   'Liquid product.url':
     'prefix': 'produrl'
