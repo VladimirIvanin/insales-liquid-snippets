@@ -15,14 +15,6 @@
     'prefix': 'prodhandle'
     'body': '{{ product.handle }}'
 
-  'Liquid product.type':
-    'prefix': 'prodtype'
-    'body': '{{ product.type }}'
-
-  'Liquid product.vendor':
-    'prefix': 'prodvendor'
-    'body': '{{ product.vendor }}';
-
   'Liquid product.price':
     'prefix': 'prodprice'
     'body': '{{ product.price }}'
@@ -31,17 +23,13 @@
     'prefix': 'prodpricemin'
     'body': '{{ product.price_min }}'
 
-  'Liquid product.compare_at_price_min':
-    'prefix': 'prodcapmin'
-    'body': '{{ product.compare_at_price_min }}'
-
   'Liquid product.price_max':
     'prefix': 'prodpricemax'
     'body': '{{ product.price_max }}'
 
   'Liquid product.price_varies':
     'prefix': 'productpv'
-    'body': '{{ product.price_varies }}'
+    'body': '{{ product.price_varies? }}'
 
   'Liquid product.url':
     'prefix': 'produrl'

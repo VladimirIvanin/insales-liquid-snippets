@@ -1,4 +1,4 @@
-'.liquid':
+'.liquid, .html':
   'CDN font awesome':
     'prefix': 'cdnfa'
     'body': """

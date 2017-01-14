@@ -10,6 +10,22 @@
     </form>
     """
 
+  'Common js compare add':
+    'prefix': 'compareadd'
+    'body': """
+    <button data-compare-add="{{ product.id }}">
+      Добавить товар в сравнение
+    </button>
+    """
+
+  'Common js compare delete':
+    'prefix': 'comparedelete'
+    'body': """
+    <button data-compare-delete="{{ product.id }}">
+      Удалить из сравнения
+    </button>
+    """
+
   'Common js cart':
     'prefix': 'cartcommon'
     'body': """

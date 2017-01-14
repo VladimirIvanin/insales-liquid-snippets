@@ -24,3 +24,11 @@
   'Liquid replace':
     'prefix': 'repl'
     'body': " | replace: '${1:substring}', '${2:replacement}'"
+
+  'Liquid append':
+    'prefix': 'append'
+    'body': "| append: '${1}' }}"
+    
+  'Liquid prepend':
+    'prefix': 'prepend'
+    'body': "| prepend: '${1}' }}"

@@ -41,6 +41,18 @@
     <img src="{{ '${1}' | asset_url }}" alt="${2}">
     """
 
+  'Liquid large first image product':
+    'prefix': 'firstimgprodlarge'
+    'body': """
+    <img src="{{ product.first_image.large_url }}" alt="{{ product.title }}">
+    """
+
+  'Liquid medium first image product':
+    'prefix': 'firstimgprodmedium'
+    'body': """
+    <img src="{{ product.first_image.medium_url }}" alt="{{ product.title }}">
+    """
+
   'Fixes IE':
     'prefix': 'fixesie'
     'body': """

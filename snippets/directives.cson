@@ -159,4 +159,15 @@
         <a href="{{ link.url }}">{{ link.title }}</a>
       </li>
     {% endfor %}
+    </ul>
+    """
+
+  'Liquid bundle_component in product.bundle_components':
+    'prefix': 'forbundlec'
+    'body': """
+    {% if product.is_bundle %}
+      {% for bundle_component in product.bundle_components %}
+        {{ bundle_component.product.title }}
+      {% endfor %}
+    {% endif %}
     """
