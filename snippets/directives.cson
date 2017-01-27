@@ -27,6 +27,24 @@
     {% include "${1}" %}
     """
 
+  'Liquid directive':
+    'prefix': '%'
+    'body': """
+    {% ${1} %}
+    """
+
+  'Liquid var':
+    'prefix': '{}'
+    'body': """
+    {{ ${1} }}
+    """
+
+  'Liquid else':
+    'prefix': 'else'
+    'body': """
+    {% else %}
+    """
+
   'Liquid capture':
     'prefix': 'cap'
     'body': """

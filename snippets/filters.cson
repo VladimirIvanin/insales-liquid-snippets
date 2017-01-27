@@ -3,6 +3,10 @@
     'prefix': 'datenowy'
     'body': "{{ 'now' | date: '%Y' }}"
 
+  'Liquid created_at':
+    'prefix': 'created_at'
+    'body': "created_at | date: '%d.%m.%Y'"
+
   'Liquid asset (local)':
     'prefix': 'assu'
     'body': """
@@ -13,6 +17,42 @@
     'prefix': 'assuie'
     'body': """
     {{ '${1}' | asset_url_if_exists }}
+    """
+
+  'Liquid small_url 48x48':
+    'prefix': 'small_url'
+    'body': """
+    small_url
+    """
+
+  'Liquid thumb_url 100x100':
+    'prefix': 'thumb_url'
+    'body': """
+    thumb_url
+    """
+
+  'Liquid compact_url 160x160':
+    'prefix': 'compact_url'
+    'body': """
+    compact_url
+    """
+
+  'Liquid medium_url 240x240':
+    'prefix': 'medium_url'
+    'body': """
+    medium_url
+    """
+
+  'Liquid large_url 480x480':
+    'prefix': 'large_url'
+    'body': """
+    large_url
+    """
+
+  'Liquid original image':
+    'prefix': 'original_url'
+    'body': """
+    original_url
     """
 
   'Liquid file (local)':
@@ -40,3 +80,19 @@
   'Liquid UPPERCASE':
     'prefix': 'upcase '
     'body': "| upcase"
+
+  'Liquid editable':
+    'prefix': 'editable '
+    'body': "| editable"
+
+  'Liquid newline_to_br':
+    'prefix': 'newline_to_br '
+    'body': "| newline_to_br"
+
+  'Liquid strip_html':
+    'prefix': 'strip_html '
+    'body': "| strip_html"
+
+  'Liquid limit':
+    'prefix': 'limit '
+    'body': "limit: ${1}"

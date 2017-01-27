@@ -78,6 +78,12 @@
     {% endif %}
     """
 
+  'Liquid product variant first':
+    'prefix': 'variantfirst'
+    'body': """
+    <input type="hidden" name="variant_id" value="{{ product.variants.first.id }}" >
+    """
+
   'Fixes IE':
     'prefix': 'fixesie'
     'body': """
